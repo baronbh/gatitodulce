@@ -1,0 +1,71 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #4a2c17;
+}
+
+/* Fondo de la primera imagen */
+body {
+  background: url('../img/fondo.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Canvas con iconos encima del fondo */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* No bloquea el mouse */
+}
+
+/* Contenedor del contenido */
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  /*border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);*/
+}
+
+.gatico {
+  max-width: 360px;
+  height: auto;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 10px 0 5px;
+}
+
+.slogan {
+  font-size: 3.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #6A2BE0;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .gatico {
+    max-width: 180px;
+  }
+  h1 { font-size: 1.5rem; }
+  .slogan { font-size: 1rem; }
+  #countdown { font-size: 1.2rem; }
+}
